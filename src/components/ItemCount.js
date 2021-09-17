@@ -1,9 +1,16 @@
 import React from 'react'
 
 const ItemCount = () => {
-    return (
+    let clicks = 0;
+    function click() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    
+    return (        
         <div>
-            <button>Cantidad</button>
+            <button onClick="click()">Agregar</button>
+            <p id="clicks">0</p>
         </div>
     )
 }
