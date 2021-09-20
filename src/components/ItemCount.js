@@ -3,20 +3,28 @@ import "./ItemCount.css";
 
 const ItemCount = () => {
     let clicks = 0;
-    function click() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
+    let stock = 7;
+
+    const aumentar = () => {
+        if(clicks < stock){
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;}        
+    };
+    const disminuir = () => {
+        if(clicks > 0){
+            clicks -= 1;
+            document.getElementById("clicks").innerHTML = clicks;} 
     };
     
     return (        
         <>
         <div className="masMenos">            
-            <button onClick="click()">-</button>
+            <button onClick={disminuir}>-</button>
             <p id="clicks">0</p>
-            <button onClick="click()">+</button>            
+            <button onClick={aumentar}>+</button>            
         </div>
         <div>
-            <button onClick="click()">Agregar</button>
+            <button onClick={aumentar}>Agregar</button>
         </div>
         </>
     )
