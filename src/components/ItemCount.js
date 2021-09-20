@@ -1,23 +1,24 @@
 import React, { useState } from 'react'
 import "./ItemCount.css";
 
-const ItemCount = () => {
+const ItemCount = () => {    
     
-    let stock = 7;
-
+    const [stock, setStock] = useState(7);
     const [counter, setCounter] = useState(0);    
 
     const aumentar = () => {
-        if(counter < stock){
+        if(stock > 0){
             setCounter(counter + 1);
+            setStock(stock - 1);
             }        
     };
     const disminuir = () => {
         if(counter > 0){
             setCounter(counter - 1);
+            setStock(stock + 1);
             } 
     };
-    
+        
     return (        
         <>
         <div className="masMenos">            
@@ -27,6 +28,9 @@ const ItemCount = () => {
         </div>
         <div>
             <button>Agregar</button>
+        </div>
+        <div>
+            {stock}
         </div>
         </>
     )
