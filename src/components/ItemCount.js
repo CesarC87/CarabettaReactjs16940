@@ -31,7 +31,7 @@ const ItemCount = ({initialStock, count}) => {
             <button>Agregar</button>
         </div>
         <div>
-            {stock}
+            <p>Stock Disponible: {stock} </p>
         </div>
         </>
     )
