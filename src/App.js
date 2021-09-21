@@ -17,7 +17,7 @@ function App() {
         </Switch>
         <ItemListContainer />            
       </header>
-      <ItemCount/>
+      <ItemCount initialStock={7} count={1}/>
       </BrowserRouter>
     </div>
   );
