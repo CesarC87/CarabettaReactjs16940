@@ -14,9 +14,9 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
-        </Switch>
-        <ItemListContainer />            
+        </Switch>                    
       </header>
+      <ItemListContainer />
       <ItemCount initialStock={7} count={1}/>
       </BrowserRouter>
     </div>
