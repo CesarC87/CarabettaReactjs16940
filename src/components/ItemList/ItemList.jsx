@@ -23,16 +23,12 @@ const ItemList = () => {
     <ul>
         {items.map((prod) => {
         return <li key={prod.id}>{prod.nombre}</li>;
-        })}        
-                       
+        })}       
 
     </ul>
            )
         
 }
-
-
-
 
 export default ItemList
 

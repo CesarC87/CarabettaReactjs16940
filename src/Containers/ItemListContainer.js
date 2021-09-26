@@ -1,13 +1,13 @@
-import ItemList from "./ItemList/ItemList"
+import ItemList from "../components/ItemList/ItemList"
 
 
-const ItemListContainer = () => {
+const ItemListContainer = ({greeting}) => {
 
 
     return (
         <>
         <div>
-            <h3>Bienvenidos al sitio!</h3>
+            <h3>{greeting}</h3>
         </div>
         <ItemList/>
         </>
