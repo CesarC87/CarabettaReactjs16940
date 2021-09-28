@@ -7,6 +7,7 @@ import Home from "../src/pages/Home";
 import ItemCount from './components/ItemCount';
 import { cartContext } from './context/cartContext';
 import CardContainer from './Containers/CardContainer';
+import ItemDetailContainer from './Containers/ItemDetailContainer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         </Switch>                    
       </header>
       <ItemListContainer greeting="Bienvenidos al sitio!"/>
+      <ItemDetailContainer/>
       <ItemCount initialStock={7} count={1}/>
       <CardContainer/>
       </BrowserRouter>

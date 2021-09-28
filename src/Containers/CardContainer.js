@@ -2,22 +2,30 @@ import React from 'react'
 import Card from '../components/Card';
 
 const CardContainer = () => {
+    const [data, setData] = React.useState([]);
+
     React.useEffect(()=> {
-        const url = "https://pokeapi.co/api/v2/pokemon?limit=10&offset=20";
+        const url = "http://localhost:3002/products";
 
         fetch(url).then((response) => {
-            console.log(response);
+            if (response.ok) {
+                return response.json();
+            }else{
+                throw response;
+            }
         })
-    })
+        .then((data) => setData(data))
+        .then((data) => console.log(data))
+        .catch((error) => console.log(`Error ${error.status}`))
+        
+    }, []);
 
     const comprarProducto = (product) => {
         console.log(`Compraste el producto: ${product}`);
     }
-
-
     return (
         <div>
-            {productos.map((producto) => {
+            {data?.map((producto) => {
                 return (
                     <Card
                         key={producto.id}
