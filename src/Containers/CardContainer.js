@@ -5,7 +5,7 @@ const CardContainer = () => {
     const [data, setData] = React.useState([]);
 
     React.useEffect(()=> {
-        const url = "http://localhost:3002/products";
+        const url = "http://localhost:3001/products";
 
         fetch(url).then((response) => {
             if (response.ok) {
@@ -24,7 +24,8 @@ const CardContainer = () => {
         console.log(`Compraste el producto: ${product}`);
     }
     return (
-        <div>
+        
+        <div style={{ display: "flex", justifyContent: "space-evenly", flexWrap: "wrap" }}>
             {data?.map((producto) => {
                 return (
                     <Card

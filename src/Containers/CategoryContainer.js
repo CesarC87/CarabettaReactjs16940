@@ -1,10 +1,10 @@
-import ItemList from "../components/ItemList/ItemList"
-import React from "react";
+import React from 'react'
+import { useParams } from 'react-router';
+import ItemList from '../components/ItemList/ItemList';
 
-
-const ItemListContainer = ({greeting}) => {
-
+const CategoryContainer = () => {
     const [data, setData] = React.useState([]);
+    const {category} = useParams();
 
     React.useEffect(()=> {
         const url = "http://localhost:3001/products";
@@ -16,11 +16,11 @@ const ItemListContainer = ({greeting}) => {
                 throw response;
             }
         })
-        .then((data) => setData(data))
-        .then((data) => console.log(data))
+        .then((data) => data.filter((product) => product.category === category))       
+        .then((data) => setData(data)) 
         .catch((error) => console.log(`Error ${error.status}`))
         
-    }, []);
+    }, [category]);
 
     return (
         <>        
@@ -29,4 +29,4 @@ const ItemListContainer = ({greeting}) => {
     )
 }
 
-export default ItemListContainer
+export default CategoryContainer

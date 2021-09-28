@@ -1,32 +1,16 @@
 import React from 'react'
 
-const ItemDetail = ({Item}) => {
-    const [description, setDescription] = React.useState([]);
-
-    React.useEffect(()=> {
-        const url = "http://localhost:3002/products/0";
-
-        fetch(url).then((response) => {
-            if (response.ok) {
-                return response.json();
-            }else{
-                throw response;
-            }
-        })
-        .then((data) => setDescription(data))
-        .then((data) => console.log(data))
-        .catch((error) => console.log(`Error ${error.status}`))
-        
-    }, []);
+const ItemDetail = ({product}) => {
+    
            
  return (
     <div>             
         <>
-        <ul>
-            <li key={description.id}>{description.title}</li>
-            <li key={description.id}>{description.description}</li>
-            <li key={description.id}>{description.price}</li>
-            <li key={description.id}>{description.image}</li>
+        <ul key={product.id}>
+            <li>Producto: {product.title}</li>
+            <li>Descripción: {product.product}</li>
+            <li>Precio: ${product.price}</li>
+            <li><img src={product.image} alt={product.title}></img></li>
         </ul>
         </>          
     </div>
