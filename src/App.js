@@ -1,9 +1,9 @@
 
 import './App.css';
-import NavBar from './components/NavBar';
-import ItemListContainer from './Containers/ItemListContainer';
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 import { cartContext } from './context/cartContext';
+import NavBar from './components/NavBar';
+import ItemListContainer from './Containers/ItemListContainer';
 import ItemDetailContainer from './Containers/ItemDetailContainer';
 import CategoryContainer from './Containers/CategoryContainer';
 
