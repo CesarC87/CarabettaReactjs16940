@@ -8,13 +8,13 @@ const NavBar = () => {
                 <Link to="/">
                     Home
                 </Link>
-                <Link to="/category/ropa">
-                    Ropa
+                <Link to="/category/paquetes">
+                    Paquetes
                 </Link>
-                <Link to="/category/accesorio">
-                    Acesorios
+                <Link to="/category/vuelos">
+                    Vuelos
                 </Link>
-                <div>Operaciones</div>
+                <div>Alojamiento</div>
                 <div>Contacto</div>
                 <CartWidget />
             </nav>

@@ -1,8 +1,8 @@
 .card {
     width: 200px;
-    border: 1px solid black;
+    border: 2px solid #cebfbf99;
     box-sizing: border-box;
-  
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
