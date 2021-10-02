@@ -2,34 +2,34 @@
   "products": [
     {
       "id": 0,
-      "title": "Mochila",
+      "title": "Paris 4/5 noches + Alojamiento!",
       "description": "Esta es la descripción del producto 0",
-      "price": 10000,
-      "image": "https://cdn1.static-tgdp.com/ui/productimages/approved/std.lang.all/62/64/696264_sized_1800x1200_rev_1.jpg",
+      "price": "10000",
+      "image": "https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900",
       "category": "accesorio",
       "stock": 8      
     },
     {
       "id": 1,
-      "title": "Zapatillas",
+      "title": "Roma 9 noches + visita al Coliseo",
       "description": "Esta es la descripción del producto 1",
-      "price": 10001,
-      "image": "https://http2.mlstatic.com/D_NQ_NP_673060-MLA41186638161_032020-O.webp",
+      "price": "10001",
+      "image": "https://historia.nationalgeographic.com.es/medio/2019/12/11/coliseo-roma_2924b6ae_1280x720.jpg",
       "category": "ropa",
       "stock": 15
     },
     {
       "id": 2,
-      "title": "Sombrilla",
+      "title": "Barcelona: 4 noches + tour Gaudí",
       "description": "Esta es la descripción del producto 2",
-      "price": 10002,
-      "image": "https://http2.mlstatic.com/D_NQ_NP_633602-MLA44808294705_022021-O.webp",
+      "price": "10002",
+      "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/ac/a8/2b.jpg",
       "category": "accesorio",
       "stock": 21
     },
     {
       "id": 3,
-      "title": "Remera",
+      "title": "Miami + Cuba 9 dias!",
       "description": "Esta es la descripción del producto 3",
       "price": 10003,
       "image": "https://http2.mlstatic.com/D_NQ_NP_877114-MLA31355994256_072019-O.webp",

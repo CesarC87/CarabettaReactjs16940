@@ -8,10 +8,10 @@ const ItemDetail = ({product}) => {
         <>
         <ul key={product.id}>
             <li>Producto: {product.title}</li>
-            <li>Descripción: {product.product}</li>
+            <li>Descripción: {product.description}</li>
             <li>Precio: ${product.price}</li>
             <li><img src={product.image} alt={product.title}></img></li>
-            <li>Stock disponible: ${product.stock}</li>
+            <li>Stock disponible: {product.stock}</li>
         </ul>
         </>          
     </div>
