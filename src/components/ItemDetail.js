@@ -1,4 +1,5 @@
 import React from 'react'
+import "../components/ItemDetail.css"
 
 const ItemDetail = ({product}) => {
     
@@ -6,13 +7,16 @@ const ItemDetail = ({product}) => {
  return (
     <div>             
         <>
-        <ul key={product.id}>
-            <li>Producto: {product.title}</li>
-            <li>Descripción: {product.description}</li>
-            <li>Precio: ${product.price}</li>
-            <li><img src={product.image} alt={product.title}></img></li>
-            <li>Stock disponible: {product.stock}</li>
-        </ul>
+        <div className="ItemDetailCards" key={product.id}>
+            <div className="ItemDetailCards__izq">
+                <span>{product.title}</span>
+               <img className="ItemDetailCards__izq--img" src={product.image} alt={product.title}></img>
+            </div>
+            <div className="ItemDetailCards__der">
+                <p>{product.description}</p>
+                <span>${product.price}</span>
+            </div>
+        </div>
         </>          
     </div>
            )
@@ -20,3 +24,6 @@ const ItemDetail = ({product}) => {
 }
 
 export default ItemDetail
+
+            
+            

@@ -1,0 +1,16 @@
+.ItemDetailCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ItemDetailCards__izq, .ItemDetailCards__der  {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*.ItemDetailCards__izq--img {
+    height: 200px;
+}*/
