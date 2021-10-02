@@ -1,5 +1,6 @@
 import * as React from "react";
 import Card from "../Card";
+import "./ItemList.css";
 
 const ItemList = ({data}) => {
 
@@ -21,7 +22,7 @@ const ItemList = ({data}) => {
 //                    {id:3 , nombre:"Teclado"}];
     
  return (
-    <div style={{ display: "flex", justifyContent: "space-evenly", flexWrap: "wrap" }}>
+    <div className="ItemList">
             {data?.map((producto) => {
                 return (
                     <Card

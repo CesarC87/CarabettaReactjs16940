@@ -2,9 +2,9 @@ import "./NavBar.css";
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 const NavBar = () => {
-    return (
-        <div>
+    return (        
             <nav className="nav">
+                <div className="navContainer">
                 <Link to="/">
                     Home
                 </Link>
@@ -14,11 +14,19 @@ const NavBar = () => {
                 <Link to="/category/vuelos">
                     Vuelos
                 </Link>
-                <div>Alojamiento</div>
-                <div>Contacto</div>
-                <CartWidget />
+                <Link to="/category/vuelos">
+                    Alojamientos
+                </Link>
+                <Link to="/category/vuelos">
+                    Contacto
+                </Link>
+                <Link to="/category/vuelos">
+                    <CartWidget />
+                </Link>
+                
+                </div>
             </nav>
-        </div>
+        
     )
 }
 

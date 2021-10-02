@@ -1,4 +1,13 @@
-.nav {
+
+.navContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;  
+}
+.navContainer a {
+    margin: 10% 0 0 0;
+    /*
+    background: #0b3b639e;
+    border-radius: 5px;
+    padding: 0 0.2%;
+    */
 }

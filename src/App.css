@@ -7,18 +7,22 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  
   background-image: url("https://images.unsplash.com/photo-1561131668-f63504fc549d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=857&q=80");
-  min-height: 20vh;  
+  min-height: 25vh;  
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 a {
   color: white;
   text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
 }
 a:hover {
   color: rgb(212, 212, 212);
