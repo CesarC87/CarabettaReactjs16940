@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 0,
-      "title": "Paris 4/5 noches + Alojamiento!",
+      "title": "PARIS 4/5 NOCHES + ALOJAMIENTO",
       "description": "Esta es la descripción del producto 0",
       "price": "10000",
       "image": "https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900",
@@ -11,7 +11,7 @@
     },
     {
       "id": 1,
-      "title": "Roma 9 noches + visita al Coliseo",
+      "title": "ROMA 9 NOCHES + VISITA AL COLISEO",
       "description": "Esta es la descripción del producto 1",
       "price": "10001",
       "image": "https://historia.nationalgeographic.com.es/medio/2019/12/11/coliseo-roma_2924b6ae_1280x720.jpg",
@@ -20,7 +20,7 @@
     },
     {
       "id": 2,
-      "title": "Barcelona: 4 noches + tour Gaudí",
+      "title": "BARCELONA 4 NOCHES + TOUR GAUDÍ",
       "description": "Esta es la descripción del producto 2",
       "price": "10002",
       "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/ac/a8/2b.jpg",
@@ -29,7 +29,7 @@
     },
     {
       "id": 3,
-      "title": "Miami + Cuba 9 dias!",
+      "title": "MIAMI + CUBA 9 DIAS!",
       "description": "Esta es la descripción del producto 3",
       "price": 10003,
       "image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fit,w_1440,h_900/crm/miamifl/Miami_Beach_Marina_1440x9000-71d78d2a5056a36_71d78edb-5056-a36a-0b88eb67bb3d6f33.jpg",
@@ -38,7 +38,7 @@
     },
     {
       "id": 4,
-      "title": "Madrid",
+      "title": "MADRID",
       "description": "Esta es la descripción del producto 4",
       "price": 10004,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyyNouAdGhFTG-1h4JvFpfHcnIn4cL5QZNFg&usqp=CAU",
@@ -47,7 +47,7 @@
     },
     {
       "id": 5,
-      "title": "Ciudad de México",
+      "title": "CIUDAD DE MÉXICO",
       "description": "Esta es la descripción del producto 5",
       "price": 10005,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtx4HgHCjUA7vu3s2pQxCVSfQyO6SmagNBA&usqp=CAU",
@@ -56,7 +56,7 @@
     },
     {
       "id": 6,
-      "title": "Londres",
+      "title": "LONDRES",
       "description": "Esta es la descripción del producto 6",
       "price": 10006,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCrzUFLUR2m07ezYOYGUChO3dEfgEY3iPvQ&usqp=CAU",
@@ -65,7 +65,7 @@
     },
     {
       "id": 7,
-      "title": "Lima",
+      "title": "LIMA",
       "description": "Esta es la descripción del producto 7",
       "price": 10007,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXuYNTG6ETBiTnnB4M0logtfEEm795DxdwrA&usqp=CAU",
