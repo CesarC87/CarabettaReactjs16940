@@ -30,6 +30,7 @@
     font-size: 1.3rem;
     margin: 2%;
     height: 5%;
+    cursor: pointer;
 }
 
 .btnMas {
@@ -40,6 +41,7 @@
     font-size: 1.3rem;
     margin: 2%;
     height: 5%;
+    cursor: pointer;
 }
 
 .btn-agregar:hover {

@@ -1,9 +1,16 @@
 import React from 'react'
 import "../components/ItemDetail.css"
 import ItemCount from './ItemCount'
+import { useState } from 'react'
 
 const ItemDetail = ({product}) => {
-    
+
+    const [addToCart, setAddToCart] = useState([]);
+
+    const onAdd = (counter) => {
+        setAddToCart(counter)
+        console.log(addToCart)
+    }
            
  return (
     <div>             
@@ -16,7 +23,7 @@ const ItemDetail = ({product}) => {
             <div className="ItemDetailCards__der">
                 <p>{product.description}</p>
                 <span>${product.price}</span>
-                <ItemCount initialStock={20} count={0}/>
+                <ItemCount initialStock={20}  onAdd={onAdd}/>
             </div>
         </div>
         </>          

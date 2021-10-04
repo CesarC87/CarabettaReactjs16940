@@ -2,11 +2,10 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import "./ItemCount.css";
 
-const ItemCount = ({initialStock, count}) => {    
+const ItemCount = ({initialStock, onAdd}) => {    
     
     const [stock, setStock] = useState(initialStock);
-    const [counter, setCounter] = useState(count);    
-    const [addToCart, setAddToCart] = useState([]);
+    const [counter, setCounter] = useState(1);        
 
     const aumentar = () => {
         if(stock > 0){
@@ -19,13 +18,7 @@ const ItemCount = ({initialStock, count}) => {
             setCounter(counter - 1);
             setStock(stock + 1);
             } 
-    };
-
-    const onAdd = () => {
-        setAddToCart(counter)
-        console.log(addToCart)
-    }
-        
+    };            
     return (        
         <>
         <div className="masMenos">            
@@ -34,7 +27,7 @@ const ItemCount = ({initialStock, count}) => {
             <button onClick={aumentar} className="btnMas">+</button>            
         </div>
         <div>
-            <button onClick={onAdd} className="btn-agregar">Agregar</button>
+            <button onClick={()=>onAdd(counter)} className="btn-agregar">Agregar</button>
         </div>
         <div>
             <p>Stock Disponible: {stock} </p>
