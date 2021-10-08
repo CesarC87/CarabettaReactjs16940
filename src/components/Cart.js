@@ -1,11 +1,24 @@
-import React from 'react'
+import React from "react";
 
 const Cart = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  const newOrder = {
+    buyer: {
+      name: "Apu",
+      surname: "Nahasapemapetilan",
+      phone: "123456",
+      mail: "minisuper@springfield.com",
+    },
+    items: [
+      {
+        id: "0",
+        title: "Paris",
+        price: "20000",
+      },
+    ],
+    total: "20000",
+  };
 
-export default Cart
+  return <div></div>;
+};
+
+export default Cart;
