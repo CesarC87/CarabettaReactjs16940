@@ -3,7 +3,7 @@ import { CartContext } from "../context/CartContext";
 import "./Cart.css";
 
 const Cart = () => {
-  const {cart , deleteItem} = useContext(CartContext)
+  const {cart , deleteItem, clearCart} = useContext(CartContext)
 
   if(cart.length === 0) {
     return (
@@ -25,6 +25,7 @@ const Cart = () => {
               </div>
             ))
           }
+          <button onClick={clearCart}>Limpiar Carrito</button>
         </div>
       )
   

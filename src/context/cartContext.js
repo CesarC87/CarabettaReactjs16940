@@ -29,8 +29,12 @@ export const CartProvider = ({children}) => { // Pasamos como parámetro a child
         setCart(cart.filter(x => x.id !== product.id))
         console.log(cart)
     }
+
+    const clearCart = () => {
+        setCart([])
+    }
     
-    return <CartContext.Provider value={{cart, addItem, deleteItem}}>
+    return <CartContext.Provider value={{cart, addItem, deleteItem, clearCart}}>
         {children}
     </CartContext.Provider>
 }
