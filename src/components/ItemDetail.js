@@ -14,7 +14,7 @@ const ItemDetail = ({product}) => {
     const onAdd = (counter) => {
         setAddToCart(counter)
         setDirToCart(true)
-        addItem(product)
+        addItem({...product , counter:counter})
     }
 
     console.log(cart)

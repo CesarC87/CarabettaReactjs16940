@@ -8,12 +8,29 @@ export const CartContext = createContext();
 export const CartProvider = ({children}) => { // Pasamos como parámetro a children, 
                                               // que va a ser todo lo que esté dentro de provider.
     const [cart, setCart] = useState([]);
+    const dontRepeat = () => {
+        return (
+        <span>Este ítem ya está en el carrito</span>
+        )
+    }
 
     const addItem = (product) => {
-        setCart([...cart , product] )
+
+        const duplicate = cart.find(x => x.id === product.id)
+        if (duplicate){
+            setCart(cart.map(x => x.id === duplicate.id
+                ? (product) : x))
+        }else {
+            setCart([...cart , product] )
+        }        
+    }
+
+    const deleteItem = (product) => {
+        setCart(cart.filter(x => x.id !== product.id))
+        console.log(cart)
     }
     
-    return <CartContext.Provider value={{cart, addItem}}>
+    return <CartContext.Provider value={{cart, addItem, deleteItem}}>
         {children}
     </CartContext.Provider>
 }

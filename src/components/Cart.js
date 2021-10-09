@@ -1,24 +1,34 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import "./Cart.css";
 
 const Cart = () => {
-  const newOrder = {
-    buyer: {
-      name: "Apu",
-      surname: "Nahasapemapetilan",
-      phone: "123456",
-      mail: "minisuper@springfield.com",
-    },
-    items: [
-      {
-        id: "0",
-        title: "Paris",
-        price: "20000",
-      },
-    ],
-    total: "20000",
-  };
+  const {cart , deleteItem} = useContext(CartContext)
 
-  return <div></div>;
+  if(cart.length === 0) {
+    return (
+      <div>
+        Carrito vacío
+      </div>
+    ) 
+    }else {
+      return (
+        <div>
+          <h3>Tu carrito:</h3>
+          {
+            cart.map((product) => (
+              <div key={product.id} className="checkOut">
+                <span>{product.title}</span>
+                <span>{product.counter}</span>
+                <span>${product.counter * product.price}</span>
+                <button onClick={() => deleteItem(product)}>Eliminar Item</button>
+              </div>
+            ))
+          }
+        </div>
+      )
+  
 };
+}
 
-export default Cart;
+export default Cart
