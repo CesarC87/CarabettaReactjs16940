@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import "./ItemCount.css";
 
-const ItemCount = ({initialStock, onAdd}) => {    
+const ItemCount = ({initialStock, onAdd, dirToCart}) => {    
     
     const [stock, setStock] = useState(initialStock);
     const [counter, setCounter] = useState(1);        
@@ -33,9 +33,13 @@ const ItemCount = ({initialStock, onAdd}) => {
             <p>Stock Disponible: {stock} </p>
         </div>
         <div>
+            {
+            dirToCart &&    
             <Link to="/cart">
             <button>Finalizar Compra</button>
             </Link>
+            }
+            
         </div>
         </>
     )

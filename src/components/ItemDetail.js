@@ -32,7 +32,7 @@ const ItemDetail = ({product}) => {
                 <span>${product.price}</span>
                 {
                     !dirToCart ? 
-                    <ItemCount initialStock={20}  onAdd={onAdd}/>  :
+                    <ItemCount initialStock={20}  onAdd={onAdd} dirToCart={dirToCart}/>  :
                     <Link to="/cart">
                         <button>Continuar al carrito</button>
                     </Link>
