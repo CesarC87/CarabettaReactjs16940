@@ -1,25 +1,27 @@
 import React from 'react'
 import Card from '../components/Card';
+import { getFirestore } from '../firebase';
 
 const CardContainer = () => {
     const [data, setData] = React.useState([]);
 
     React.useEffect(()=> {
-        const url = "http://localhost:3001/products";
+        const db = getFirestore();
+        const productsCollection = db.collection('products');
 
-        fetch(url).then((response) => {
-            if (response.ok) {
-                return response.json();
-            }else{
-                throw response;
+        productsCollection
+        .get()
+        .then((querySnapshot) => {
+            console.log(querySnapshot);
+            if (querySnapshot.empty) {
+                console.log("No hay productos para mostrar")
+            } else {
+                setData(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() } )));
             }
         })
-        .then((data) => setData(data))
-        .then((data) => console.log(data))
-        .catch((error) => console.log(`Error ${error.status}`))
-        
-    }, []);
 
+    }, []);
+    
     const comprarProducto = (product) => {
         console.log(`Compraste el producto: ${product}`);
     }
@@ -44,3 +46,16 @@ const CardContainer = () => {
 
 export default CardContainer
 
+
+// const url = "http://localhost:3001/products";
+
+// fetch(url).then((response) => {
+//     if (response.ok) {
+//         return response.json();
+//     }else{
+//         throw response;
+//     }
+// })
+// .then((data) => setData(data))
+// .then((data) => console.log(data))
+// .catch((error) => console.log(`Error ${error.status}`))
