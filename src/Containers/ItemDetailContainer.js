@@ -8,7 +8,6 @@ const ItemDetailContainer = () => {
     const [product, setProduct] = React.useState([]);
     const [loading, setLoading] = React.useState(false);
     const [error, setError] = React.useState(null);
-
     const {id} = useParams()
     console.log(id)
 

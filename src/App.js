@@ -6,8 +6,11 @@ import ItemListContainer from "./Containers/ItemListContainer";
 import ItemDetailContainer from "./Containers/ItemDetailContainer";
 import CategoryContainer from "./Containers/CategoryContainer";
 import Cart from "./components/Cart";
+import { getFirestore} from "./firebase"
+import React from "react";
 
 function App() {
+  
   return (
     <div className="App">
       <CartProvider> 

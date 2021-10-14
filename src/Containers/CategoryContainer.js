@@ -20,6 +20,7 @@ const CategoryContainer = () => {
             console.log(querySnapshot);
             if (querySnapshot.empty) {
                 console.log("No hay productos para mostrar")
+                setData([]);
             } else {
                 setData(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() } )));
             }

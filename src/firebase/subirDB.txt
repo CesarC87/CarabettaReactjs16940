@@ -1,0 +1,91 @@
+import { getFirestore} from "../firebase";
+
+React.useEffect(() => {
+    const products = [
+      {
+        "id": 0,
+        "title": "PARIS 4/5 NOCHES + ALOJAMIENTO",
+        "description": "Esta es la descripción del producto 0",
+        "price": "10000",
+        "image": "https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900",
+        "category": "paquetes",
+        "stock": 8      
+      },
+      {
+        "id": 1,
+        "title": "ROMA 9 NOCHES + VISITA AL COLISEO",
+        "description": "Esta es la descripción del producto 1",
+        "price": "10001",
+        "image": "https://historia.nationalgeographic.com.es/medio/2019/12/11/coliseo-roma_2924b6ae_1280x720.jpg",
+        "category": "paquetes",
+        "stock": 15
+      },
+      {
+        "id": 2,
+        "title": "BARCELONA 4 NOCHES + TOUR GAUDÍ",
+        "description": "Esta es la descripción del producto 2",
+        "price": "10002",
+        "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/ac/a8/2b.jpg",
+        "category": "paquetes",
+        "stock": 21
+      },
+      {
+        "id": 3,
+        "title": "MIAMI + CUBA 9 DIAS!",
+        "description": "Esta es la descripción del producto 3",
+        "price": 10003,
+        "image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fit,w_1440,h_900/crm/miamifl/Miami_Beach_Marina_1440x9000-71d78d2a5056a36_71d78edb-5056-a36a-0b88eb67bb3d6f33.jpg",
+        "category": "paquetes",
+        "stock": 4
+      },
+      {
+        "id": 4,
+        "title": "MADRID",
+        "description": "Esta es la descripción del producto 4",
+        "price": 10004,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyyNouAdGhFTG-1h4JvFpfHcnIn4cL5QZNFg&usqp=CAU",
+        "category": "vuelos",
+        "stock": 12
+      },
+      {
+        "id": 5,
+        "title": "CIUDAD DE MÉXICO",
+        "description": "Esta es la descripción del producto 5",
+        "price": 10005,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtx4HgHCjUA7vu3s2pQxCVSfQyO6SmagNBA&usqp=CAU",
+        "category": "vuelos",
+        "stock": 7
+      },
+      {
+        "id": 6,
+        "title": "LONDRES",
+        "description": "Esta es la descripción del producto 6",
+        "price": 10006,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCrzUFLUR2m07ezYOYGUChO3dEfgEY3iPvQ&usqp=CAU",
+        "category": "vuelos",
+        "stock": 6
+      },
+      {
+        "id": 7,
+        "title": "LIMA",
+        "description": "Esta es la descripción del producto 7",
+        "price": 10007,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXuYNTG6ETBiTnnB4M0logtfEEm795DxdwrA&usqp=CAU",
+        "category": "vuelos",
+        "stock": 5
+      }
+    ];
+  
+  const db = getFirestore();
+  const productsCollection = db.collection("products")
+  
+  products.forEach((prod) => {
+      productsCollection
+      .add(prod)
+      .then((docRef) => console.log("Se agregó:", docRef.id))
+      .catch((error) => console.log(error))
+  })
+  }, []);
+
+
+  Nota ---> Importarlo en la app, con useEffect para que se renderice una vez, sino se agrega cada vez que renderice.

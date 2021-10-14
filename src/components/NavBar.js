@@ -19,7 +19,7 @@ const NavBar = () => {
                 <Link to="/category/vuelos">
                     Vuelos
                 </Link>
-                <Link to="/category/vuelos">
+                <Link to="/category/alojamientos">
                     Alojamientos
                 </Link>
                 <Link to="/category/vuelos">
