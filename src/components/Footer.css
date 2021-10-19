@@ -1,0 +1,17 @@
+.footer {
+    background-color: black;
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.footer__redes {
+    display: flex;
+    flex-direction: row;    
+}
+.footer__redes a {
+    margin: 1% 1%;
+    font-size: 1.5em;
+}

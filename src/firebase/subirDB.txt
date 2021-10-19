@@ -78,8 +78,10 @@ React.useEffect(() => {
   
   const db = getFirestore();
   const productsCollection = db.collection("products")
+  const productId = db.collection('products').where("id", "==" , category)
   
   products.forEach((prod) => {
+    if (prod.id != )
       productsCollection
       .add(prod)
       .then((docRef) => console.log("Se agregó:", docRef.id))

@@ -1,6 +1,5 @@
 import React from 'react'
 import ItemDetail from '../components/ItemDetail'
-import Item from '../components/Item/Item'
 import { useParams } from 'react-router'
 import { getFirestore } from '../firebase'
 
@@ -16,13 +15,13 @@ const ItemDetailContainer = () => {
         // Apuntamos a la base de datos
         const db = getFirestore();
         // Apuntamos a una colección
-        const productsCollection = db.collection('products');
+        const productsCollection = db.collection("products");
         // Apuntamos a un elemento específico
         const item = productsCollection.doc(id);
         // Traemos los datos del producto:
         item.get()
         .then((doc) => {
-            if (!doc.exists) {
+            if (!doc.exists) {                
                 console.log("No hay productos a mostrar");
             } else {
                 setProduct({id: doc.id, ...doc.data() });

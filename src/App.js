@@ -1,16 +1,14 @@
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { CartContext, CartProvider } from "./context/CartContext";
+import { CartProvider } from "./context/CartContext";
 import NavBar from "./components/NavBar";
 import ItemListContainer from "./Containers/ItemListContainer";
 import ItemDetailContainer from "./Containers/ItemDetailContainer";
 import CategoryContainer from "./Containers/CategoryContainer";
 import Cart from "./components/Cart";
-import { getFirestore} from "./firebase"
-import React from "react";
+import Footer from "./components/Footer";
 
 function App() {
-  
   return (
     <div className="App">
       <CartProvider> 
@@ -28,6 +26,7 @@ function App() {
           />
           <Route exact path="/Cart" component={Cart} />
         </Switch>
+        <Footer />
       </BrowserRouter>
       </CartProvider> 
     </div>

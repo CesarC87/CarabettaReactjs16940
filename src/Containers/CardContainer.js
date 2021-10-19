@@ -35,7 +35,7 @@ const CardContainer = () => {
                         title={producto.title}
                         description={producto.description}
                         image={producto.image}
-                        comprar={comprarProducto}
+                        comprar={{comprarProducto}}
                         price={producto.price}
                         />
                 )

@@ -25,7 +25,7 @@ const NavBar = () => {
                 <Link to="/category/vuelos">
                     Contacto
                 </Link>
-                <Link to="/Cart">
+                <Link to="/Cart" className="toCart">
                     <CartWidget />
                     {
                         cart.length !== 0 && <span className="h5 mx-1">{cart.length}</span>

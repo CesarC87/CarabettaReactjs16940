@@ -12,3 +12,18 @@
     padding: 0 0.2%;
     */
 }
+
+.mx-1 {
+    position: absolute;
+    color: white;
+    bottom: 75%;
+    left: 55%;
+    background: #22ab7fbf;
+    border-radius: 2em;
+    padding: 2% 20%;
+    font-size: 0.5em;
+}
+
+.toCart {
+    position: relative;
+}

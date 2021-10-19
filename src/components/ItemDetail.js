@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const ItemDetail = ({product}) => {
 
-    const {addItem, cart} = useContext(CartContext);
+    const {addItem} = useContext(CartContext);
     const [addToCart, setAddToCart] = useState([]);
     const [dirToCart, setDirToCart] = useState(false)
 
@@ -17,18 +17,18 @@ const ItemDetail = ({product}) => {
         addItem({...product , counter:counter})
     }
 
-    console.log(cart)
+    console.log(product)
            
  return (
     <div>             
         <>
         <div className="ItemDetailCards" key={product.id}>
             <div className="ItemDetailCards__izq">
-                <span>{product.title}</span>
+                <span className="ItemDetailCards__izq--title">{product.title}</span>
                <img className="ItemDetailCards__izq--img" src={product.image} alt={product.title}></img>
             </div>
             <div className="ItemDetailCards__der">
-                <p>{product.description}</p>
+                <p className="ItemDetailCards__der--description">{product.description}</p>
                 <span>${product.price}</span>
                 {
                     !dirToCart ? 
