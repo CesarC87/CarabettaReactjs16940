@@ -15,10 +15,12 @@ const Card = ({ title, description, image, price, productId }) => {
               <div className={styles.imageContainer}>
                 <img className={styles.image} src={image} alt={title} />
               </div>
+              <div className={styles.descriptionDiv}>
                   <p className={styles.description}>{description}</p>
+              </div>    
                   <p className={styles.price}>$ {price}</p>
                 <button className={styles.button}>
-                  ¡Comprar!
+                  Ver detalle
                 </button>
           </div>
         </Link>

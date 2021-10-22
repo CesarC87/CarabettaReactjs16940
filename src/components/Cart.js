@@ -48,7 +48,7 @@ const Cart = () => {
                 <span>{product.title}</span>
                 <span>{product.counter}</span>
                 <span>${product.counter * product.price}</span>
-                <button onClick={() => deleteItem(product)}>Eliminar Item</button>
+                <button onClick={() => deleteItem(product)} className="btnEliminar">Eliminar Item</button>
               </div>
             ))
           }

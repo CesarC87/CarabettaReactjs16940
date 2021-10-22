@@ -20,12 +20,12 @@
   background-position: center;
 }
 
-a {
+html a {
   color: white;
   text-decoration: none;
   font-family: 'Bebas Neue', cursive;
 }
-a:hover {
+html a:hover {
   color: rgb(212, 212, 212);
 }
 

@@ -4,13 +4,20 @@
     justify-content: space-around;  
 }
 .navContainer a {
-    margin: 10% 0 0 0;
+    margin: 9% 0 0 0;
     font-size: 1.5em;
-    /*
-    background: #0b3b639e;
-    border-radius: 5px;
-    padding: 0 0.2%;
-    */
+    color: #f8f9fa;
+    text-decoration: none;       
+}
+
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-direction: column;
 }
 
 .mx-1 {
