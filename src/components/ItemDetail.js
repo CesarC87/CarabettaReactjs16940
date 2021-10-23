@@ -5,6 +5,7 @@ import { Carousel } from 'bootstrap'
 import { useState, useContext } from 'react'
 import { CartContext } from '../context/CartContext'
 import { Link } from 'react-router-dom'
+import Carousel2 from './Carousel2'
 
 
 
@@ -24,7 +25,9 @@ const ItemDetail = ({product}) => {
            
  return (
     <div>             
-        <>        
+        <> 
+        <Carousel2/>       
+
         <div className="ItemDetailCards" key={product.id}>
             <div className="ItemDetailCards__izq">
                 <span className="ItemDetailCards__izq--title">{product.title}</span>
