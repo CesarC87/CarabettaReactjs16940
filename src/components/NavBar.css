@@ -23,11 +23,10 @@
 .mx-1 {
     position: absolute;
     color: white;
-    bottom: 75%;
-    left: 55%;
+    top: 1%;
     background: #22ab7fbf;
-    border-radius: 2em;
-    padding: 2% 20%;
+    border-radius: 50%;
+    padding: 2% 25%;
     font-size: 0.5em;
 }
 

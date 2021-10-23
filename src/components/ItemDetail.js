@@ -1,7 +1,6 @@
 import React from 'react'
 import "../components/ItemDetail.css"
 import ItemCount from './ItemCount'
-import { Carousel } from 'bootstrap'
 import { useState, useContext } from 'react'
 import { CartContext } from '../context/CartContext'
 import { Link } from 'react-router-dom'
@@ -25,13 +24,12 @@ const ItemDetail = ({product}) => {
            
  return (
     <div>             
-        <> 
-        <Carousel2/>       
-
+        <>   
         <div className="ItemDetailCards" key={product.id}>
             <div className="ItemDetailCards__izq">
                 <span className="ItemDetailCards__izq--title">{product.title}</span>
-               <img className="ItemDetailCards__izq--img" src={product.image} alt={product.title}></img>
+                <Carousel2 />
+               {/* <img className="ItemDetailCards__izq--img" src={product.image} alt={product.title}></img> */}
             </div>
             <div className="ItemDetailCards__der">
                 <p className="ItemDetailCards__der--description">{product.description2}</p>

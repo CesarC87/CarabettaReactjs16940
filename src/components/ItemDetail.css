@@ -13,13 +13,12 @@
 
 .ItemDetailCards__izq {
     position: relative;
-    border-radius: 15px;
-    border: 1px solid grey;
+    border-radius: 15px;    
     margin: 5% 0 15% 10%;
 }
 
 .ItemDetailCards__der {
-    margin: 15% 0 0 0;
+    margin: 8% 3% 0 3%;
 }
 
 .ItemDetailCards__der--description {
@@ -30,33 +29,23 @@
     font-family: 'Poppins', sans-serif;
     margin: 2% 0;
     color: white;
-    background-color: #78d7c5;
+    background-color: var(--btnGreen);
     border: hidden;
     border-radius: 15px;
-    font-size: 1.5rem;
-    padding: 0.3% 1%;
+    font-size: 1rem;
+    padding: 1% 2%;
 }
 
-.btnMenos {
-    border: 1px solid #8a9593;
-    border-radius: 50%;
-    padding: 10px 20px;
-    background-color: white;
-    font-size: 1.3rem;
-    margin: 2%;
-    height: 5%;
-    cursor: pointer;
-}
+.btnMenos {    
+    border: none;
+    background: white;
+    font-size: 2rem;
+}   
 
-.btnMas {
-    border: 1px solid #8a9593;
-    border-radius: 50%;
-    padding: 10px 15px;
-    background-color: white;
-    font-size: 1.3rem;
-    margin: 2%;
-    height: 5%;
-    cursor: pointer;
+.btnMas {   
+    border: none;
+    background: white;
+    font-size: 2rem;
 }
 
 .btn-agregar:hover {
