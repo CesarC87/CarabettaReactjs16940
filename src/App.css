@@ -11,8 +11,7 @@ body {
 }
 .App-header {
   
-  background-image: url("https://images.unsplash.com/photo-1561131668-f63504fc549d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=857&q=80");
-  min-height: 25vh;  
+  background: linear-gradient( rgb(189 158 155 / -63%) 57%, rgb(28 28 28 / 87%)91%),url(https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80);  min-height: 25vh;  
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -20,6 +19,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
 }
 
 html a {
@@ -29,6 +29,10 @@ html a {
 }
 html a:hover {
   color: rgb(212, 212, 212);
+}
+
+.carouselContainerHome {
+  height: 300px;
 }
 
 

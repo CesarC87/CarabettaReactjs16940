@@ -7,6 +7,7 @@ import ItemDetailContainer from "./Containers/ItemDetailContainer";
 import CategoryContainer from "./Containers/CategoryContainer";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
+import CarouselHome from "./components/CarouselHome";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         <header className="App-header">
           <NavBar />
         </header>
+        <div className="carouselContainerHome">
+        <CarouselHome />
+        </div>
         <Switch>
           <Route exact path="/" component={ItemListContainer} />
           <Route exact path="/product/:id" component={ItemDetailContainer} />

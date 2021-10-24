@@ -3,13 +3,17 @@ import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import { loginWithGoogle } from "../firebase/index";
 const NavBar = () => {
 
     const {cart} = useContext(CartContext)
 
     return (        
             <nav className="nav">
-                <div className="navContainer">
+                <div className="navContainer1">
+                    Logo
+                </div>
+                <div className="navContainer2">
                 <Link to="/">
                     Home
                 </Link>
@@ -31,6 +35,7 @@ const NavBar = () => {
                         cart.length !== 0 && <span className="h5 mx-1">{cart.length}</span>
                     }
                 </Link>
+                {/* <button onClick={loginWithGoogle} className="logIn">Ingresar</button> */}
                 
                 </div>
             </nav>

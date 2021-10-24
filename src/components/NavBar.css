@@ -1,13 +1,16 @@
 
-.navContainer {
+.navContainer1 {
+    height: 19vh;
+}
+.navContainer2 {
     display: flex;
     justify-content: space-around;  
 }
-.navContainer a {
-    margin: 9% 0 0 0;
-    font-size: 1.5em;
+.navContainer2 a {    
+    
     color: #f8f9fa;
     text-decoration: none;       
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -23,10 +26,10 @@
 .mx-1 {
     position: absolute;
     color: white;
-    top: 1%;
-    background: #22ab7fbf;
+    top: -12%;
+    background: #c50606b3;
     border-radius: 50%;
-    padding: 2% 25%;
+    width: 100%;
     font-size: 0.5em;
 }
 

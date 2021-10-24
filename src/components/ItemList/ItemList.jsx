@@ -2,6 +2,7 @@ import * as React from "react";
 import Card from "../Card";
 import "./ItemList.css";
 
+
 const ItemList = ({data}) => {
 
 //     const [items, setItems] = React.useState([]);
@@ -25,6 +26,7 @@ const ItemList = ({data}) => {
     <div className="ItemList">
             {data?.map((producto) => {
                 return (
+                    <>                    
                     <Card
                         key={producto.id}
                         title={producto.title}
@@ -33,6 +35,7 @@ const ItemList = ({data}) => {
                         productId={producto.id}
                         // comprar={comprarProducto}
                         />
+                        </>
                 )
             })}
         </div>
