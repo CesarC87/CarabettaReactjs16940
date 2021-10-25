@@ -15,3 +15,7 @@
 .carousel-inner {
     height: inherit;
 }
+
+.carousel-item .carousel-caption {
+    bottom: 38.25rem;
+}

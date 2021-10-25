@@ -36,6 +36,17 @@
     padding: 1% 2%;
 }
 
+.btn-finalizar {
+    font-family: 'Poppins', sans-serif;
+    margin: 2% 0;
+    color: white;
+    background-color: #1c558d;
+    border: hidden;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 1% 2%;
+}
+
 .btnMenos {    
     border: none;
     background: white;
@@ -48,7 +59,7 @@
     font-size: 2rem;
 }
 
-.btn-agregar:hover {
+.btn-agregar:hover, .btn-finalizar:hover {
     cursor: pointer;
 }
 

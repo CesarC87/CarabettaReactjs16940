@@ -1,16 +1,16 @@
 
 .navContainer1 {
-    height: 19vh;
+    height: 12vh;
 }
 .navContainer2 {
     display: flex;
     justify-content: space-around;  
 }
-.navContainer2 a {    
-    
-    color: #f8f9fa;
+.navContainer2 a {        
+    color: #000000;
     text-decoration: none;       
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
 }
 
 
@@ -26,11 +26,11 @@
 .mx-1 {
     position: absolute;
     color: white;
-    top: -12%;
+    top: -16%;
     background: #c50606b3;
     border-radius: 50%;
-    width: 100%;
-    font-size: 0.5em;
+    width: 100%;    
+    font-size: 0.9rem !important;
 }
 
 .toCart {

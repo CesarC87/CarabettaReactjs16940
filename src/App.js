@@ -8,6 +8,9 @@ import CategoryContainer from "./Containers/CategoryContainer";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import CarouselHome from "./components/CarouselHome";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {
   return (
@@ -18,7 +21,8 @@ function App() {
           <NavBar />
         </header>
         <div className="carouselContainerHome">
-        <CarouselHome />
+        <CarouselHome /> 
+        
         </div>
         <Switch>
           <Route exact path="/" component={ItemListContainer} />

@@ -38,7 +38,7 @@ const ItemDetail = ({product}) => {
                     !dirToCart ? 
                     <ItemCount initialStock={20}  onAdd={onAdd} dirToCart={dirToCart}/>  :
                     <Link to="/cart">
-                        <button>Finalizar compra</button>
+                        <button className="btn-finalizar">Finalizar compra</button>
                     </Link>
                     }
                 

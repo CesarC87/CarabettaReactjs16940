@@ -1,32 +1,19 @@
 import * as React from "react";
 import Card from "../Card";
 import "./ItemList.css";
+import Slider from "react-slick"
+
+
 
 
 const ItemList = ({data}) => {
 
-//     const [items, setItems] = React.useState([]);
-
-//     React.useEffect ( () => {
-//         getProductos().then((result) => setItems(result));
-//     })
-//     const getProductos = () => {
-//         return new Promise( (resolve,reject) => {
-//         setTimeout(() => { 
-//             resolve(productos); 
-//         }, 3000);
-//     });  }
-      
-
-//  const productos = [{id:1 , nombre:"Auriculares"}, 
-//                    {id:2 , nombre:"Micrófono"} , 
-//                    {id:3 , nombre:"Teclado"}];
-    
  return (
     <div className="ItemList">
             {data?.map((producto) => {
                 return (
-                    <>                    
+                    <>   
+                       
                     <Card
                         key={producto.id}
                         title={producto.title}
@@ -35,7 +22,7 @@ const ItemList = ({data}) => {
                         productId={producto.id}
                         // comprar={comprarProducto}
                         />
-                        </>
+                    </>
                 )
             })}
         </div>

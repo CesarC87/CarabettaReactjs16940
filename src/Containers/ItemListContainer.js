@@ -2,7 +2,6 @@ import ItemList from "../components/ItemList/ItemList"
 import React from "react";
 import { getFirestore } from "../firebase";
 
-
 const ItemListContainer = ({greeting}) => {
 
     const [data, setData] = React.useState([]);
@@ -36,7 +35,7 @@ const ItemListContainer = ({greeting}) => {
             <p>
                 Ha habido un error: {error.status} {error.statusText}
             </p>
-        )}
+        )}        
             <ItemList data={data}/>
         </>
     )
