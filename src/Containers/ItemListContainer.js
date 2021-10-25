@@ -1,6 +1,7 @@
 import ItemList from "../components/ItemList/ItemList"
 import React from "react";
 import { getFirestore } from "../firebase";
+import CarouselHome from "../components/CarouselHome/CarouselHome";
 
 const ItemListContainer = ({greeting}) => {
 
@@ -29,7 +30,11 @@ const ItemListContainer = ({greeting}) => {
     }, []);
 
     return (
-        <>        
+        <>
+        <div className="carouselContainerHome">
+            <CarouselHome />
+        </div>        
+          
         {loading && <p>Cargando...</p>}
         {error && (
             <p>

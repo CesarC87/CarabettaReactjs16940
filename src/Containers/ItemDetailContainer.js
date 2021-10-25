@@ -1,5 +1,5 @@
 import React from 'react'
-import ItemDetail from '../components/ItemDetail'
+import ItemDetail from '../components/ItemDetail/ItemDetail'
 import { useParams } from 'react-router'
 import { getFirestore } from '../firebase'
 

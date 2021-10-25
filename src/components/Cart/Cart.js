@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 import "./Cart.css";
 import { Link } from "react-router-dom";
-import { getFirestore } from "../firebase";
+import { getFirestore } from "../../firebase";
 
 const Cart = () => {
   const {cart , deleteItem, clearCart} = useContext(CartContext)

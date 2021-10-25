@@ -27,11 +27,11 @@ const CarouselHome = () => {
                     alt="Second slide"
                     />
                 </div>
-                <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <Carousel.Caption className="captionEsp">
+                <h3>Alojate en los mejores Hoteles, cabañas y más!</h3>
+                <p>El mundo es tu hogar</p>
                 </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Item> 
             <Carousel.Item>
                 <div className="img-wrapper-carousel">
                     <img
@@ -41,11 +41,11 @@ const CarouselHome = () => {
                     />
                 </div>
                 <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <h3>Las mejores actividades para disfrutar en familia</h3>
+                <p>Asistencia al viajero las 24hs</p>
                 </Carousel.Caption>
             </Carousel.Item>
-        </Carousel>
+        </Carousel> 
     
         </>
     )

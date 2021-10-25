@@ -1,16 +1,16 @@
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./Containers/ItemListContainer";
 import ItemDetailContainer from "./Containers/ItemDetailContainer";
 import CategoryContainer from "./Containers/CategoryContainer";
-import Cart from "./components/Cart";
-import Footer from "./components/Footer";
-import CarouselHome from "./components/CarouselHome";
+import Cart from "./components/Cart/Cart";
+import Footer from "./components/Footer/Footer";
+import CarouselHome from "./components/CarouselHome/CarouselHome";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
+import React from "react";
 
 function App() {
   return (
@@ -19,11 +19,7 @@ function App() {
       <BrowserRouter>
         <header className="App-header">
           <NavBar />
-        </header>
-        <div className="carouselContainerHome">
-        <CarouselHome /> 
-        
-        </div>
+        </header>        
         <Switch>
           <Route exact path="/" component={ItemListContainer} />
           <Route exact path="/product/:id" component={ItemDetailContainer} />

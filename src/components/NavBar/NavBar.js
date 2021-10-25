@@ -1,9 +1,9 @@
 import "./NavBar.css";
-import CartWidget from "./CartWidget";
+import CartWidget from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { CartContext } from "../context/CartContext";
-import { loginWithGoogle } from "../firebase/index";
+import { CartContext } from "../../context/CartContext";
+import { loginWithGoogle } from "../../firebase/index";
 const NavBar = () => {
 
     const {cart} = useContext(CartContext)

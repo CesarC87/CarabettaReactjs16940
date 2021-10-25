@@ -1,10 +1,10 @@
 import React from 'react'
-import "../components/ItemDetail.css"
-import ItemCount from './ItemCount'
+import "../ItemDetail/ItemDetail.css"
+import ItemCount from '../ItemCount/ItemCount'
 import { useState, useContext } from 'react'
-import { CartContext } from '../context/CartContext'
+import { CartContext } from '../../context/CartContext'
 import { Link } from 'react-router-dom'
-import Carousel2 from './Carousel2'
+import Carousel2 from '../Carousel/Carousel2'
 
 
 
