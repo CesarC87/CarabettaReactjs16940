@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/CesarC87/CarabettaReactjs16940/static/css/main.352fb373.chunk.css",
+    "main.js": "/CesarC87/CarabettaReactjs16940/static/js/main.22ca0de2.chunk.js",
+    "main.js.map": "/CesarC87/CarabettaReactjs16940/static/js/main.22ca0de2.chunk.js.map",
+    "runtime-main.js": "/CesarC87/CarabettaReactjs16940/static/js/runtime-main.0147e58e.js",
+    "runtime-main.js.map": "/CesarC87/CarabettaReactjs16940/static/js/runtime-main.0147e58e.js.map",
+    "static/css/2.c0cfb39b.chunk.css": "/CesarC87/CarabettaReactjs16940/static/css/2.c0cfb39b.chunk.css",
+    "static/js/2.10077a3d.chunk.js": "/CesarC87/CarabettaReactjs16940/static/js/2.10077a3d.chunk.js",
+    "static/js/2.10077a3d.chunk.js.map": "/CesarC87/CarabettaReactjs16940/static/js/2.10077a3d.chunk.js.map",
+    "index.html": "/CesarC87/CarabettaReactjs16940/index.html",
+    "static/css/2.c0cfb39b.chunk.css.map": "/CesarC87/CarabettaReactjs16940/static/css/2.c0cfb39b.chunk.css.map",
+    "static/css/main.352fb373.chunk.css.map": "/CesarC87/CarabettaReactjs16940/static/css/main.352fb373.chunk.css.map",
+    "static/js/2.10077a3d.chunk.js.LICENSE.txt": "/CesarC87/CarabettaReactjs16940/static/js/2.10077a3d.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/CesarC87/CarabettaReactjs16940/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0147e58e.js",
+    "static/css/2.c0cfb39b.chunk.css",
+    "static/js/2.10077a3d.chunk.js",
+    "static/css/main.352fb373.chunk.css",
+    "static/js/main.22ca0de2.chunk.js"
+  ]
+}
