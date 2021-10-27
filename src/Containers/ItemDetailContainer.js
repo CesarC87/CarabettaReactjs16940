@@ -7,8 +7,7 @@ const ItemDetailContainer = () => {
     const [product, setProduct] = React.useState([]);
     const [loading, setLoading] = React.useState(false);
     const [error, setError] = React.useState(null);
-    const {id} = useParams()
-    console.log(id)
+    const {id} = useParams()    
 
     React.useEffect(()=> {
         setLoading(true);
@@ -30,7 +29,7 @@ const ItemDetailContainer = () => {
         .catch((error) => setError(error))
         .finally(() => setLoading(false));
     }, [id]);
-    console.log(product)
+   
     return (
         <div>
           {loading && <p>Cargando...</p>}

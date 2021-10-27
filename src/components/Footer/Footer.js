@@ -18,7 +18,7 @@ const Footer = () => {
             </Link>
             </div>
             <div className="footerbottom__der">
-                &copy; MixitUp | By César Carabetta
+                &copy; ToTheWorld | By César Carabetta
             </div>
         </footer>
     )

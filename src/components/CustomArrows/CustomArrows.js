@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import ItemList from "../ItemList/ItemList";
-import Card from "../Card/Card"
+import Card from "../Card/Card";
+import "./CustomArrows.css"
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "red" }}
+      style={{ ...style, display: "block"}}
       onClick={onClick}
     />
   );
@@ -19,60 +19,46 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "green" }}
+      style={{ ...style, display: "block"}}
       onClick={onClick}
     />
   );
 }
 
 export default class CustomArrows extends Component {
-  render(data) {
+  
+  render(props) {    
     const settings = {
       dots: true,
       infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
+      slidesToShow: 5,
+      slidesToScroll: 2,
       nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />
-    };
+      prevArrow: <SamplePrevArrow />,      
+    };     
+   
     return (
-      <div>
+      <div className="CustomArrowsContainer">
         <h2>Custom Arrows</h2>
-        <Slider {...settings}>
-          <div>
-          {data?.map((producto) => {
+        <Slider {...settings}>               
+        {this.props.data?.map((producto) => {
                 return (
-                    <>   
-                       
-                    <Card
-                        key={producto.id}
-                        title={producto.title}
-                        description={producto.description}
-                        image={producto.image}
-                        productId={producto.id}
-                        // comprar={comprarProducto}
-                        />
-                    </>
+                    <div>
+                      <Card
+                          key={producto.id}
+                          title={producto.title}
+                          description={producto.description}
+                          image={producto.image}
+                          productId={producto.id}
+                          price={producto.price}                          
+                          />
+                    </div>                    
                 )
-            })}
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
+            })}   
         </Slider>
       </div>
     );
   }
 }
+
+ 

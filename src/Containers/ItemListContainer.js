@@ -1,7 +1,7 @@
-import ItemList from "../components/ItemList/ItemList"
 import React from "react";
 import { getFirestore } from "../firebase";
 import CarouselHome from "../components/CarouselHome/CarouselHome";
+import CustomArrows from "../components/CustomArrows/CustomArrows";
 
 const ItemListContainer = ({greeting}) => {
 
@@ -41,25 +41,10 @@ const ItemListContainer = ({greeting}) => {
                 Ha habido un error: {error.status} {error.statusText}
             </p>
         )}        
-            <ItemList data={data}/>
+        <CustomArrows data={data}/>            
         </>
     )
 }
 
 export default ItemListContainer
 
-// React.useEffect(()=> {
-//     const url = "http://localhost:3001/products";
-
-//     fetch(url).then((response) => {
-//         if (response.ok) {
-//             return response.json();
-//         }else{
-//             throw response;
-//         }
-//     })
-//     .then((data) => setData(data))
-//     .then((data) => console.log(data))
-//     .catch((error) => console.log(`Error ${error.status}`))
-    
-// }, []);

@@ -1,0 +1,15 @@
+.CustomArrowsContainer {
+    margin: 30px;
+}
+
+.slick-slider .slick-next, .slick-slider .slick-prev {    
+    color: black;
+    font-size: xx-large;    
+    background: white;
+}
+
+.slick-slider .slick-next::before, .slick-slider .slick-prev::before {    
+    color: black;
+    font-size: xx-large;    
+    background-color: white;
+}

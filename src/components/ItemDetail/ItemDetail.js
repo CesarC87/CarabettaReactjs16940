@@ -18,9 +18,7 @@ const ItemDetail = ({product}) => {
         setAddToCart(counter)
         setDirToCart(true)
         addItem({...product , counter:counter})
-    }
-
-    console.log(product)
+    }  
            
  return (
     <div>             

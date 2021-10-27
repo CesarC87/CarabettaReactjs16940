@@ -2,11 +2,10 @@ import * as React from 'react';
 import styles from "./Card.module.css";
 import { Link } from "react-router-dom";
 
-const Card = ({ title, description, image, price, productId }) => {  
-
-  console.log(price)
+const Card = ({ title, description, image, price, productId }) => {   
   
     return (      
+      <div>
         <Link style={{ textDecoration: "none", color: "inherit" }} to={`/product/${productId}`}>
           <div className={styles.card}>
             <div className={styles.titleDiv}>
@@ -24,7 +23,7 @@ const Card = ({ title, description, image, price, productId }) => {
                 </button>
           </div>
         </Link>
-        
+      </div>  
     )
 }
 
