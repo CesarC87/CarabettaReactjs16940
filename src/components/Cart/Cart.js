@@ -40,23 +40,30 @@ const Cart = () => {
     ) 
     }else {
       return (
-        <div>
+        <>
+        <div className="cartTitle">
           <h3>Tu carrito:</h3>
-          {
-            cart.map((product) => (
-              <div key={product.id} className="checkOut">
-                <span>{product.title}</span>
-                <span>{product.counter}</span>
-                <span>${product.counter * product.price}</span>
-                <button onClick={() => deleteItem(product)} className="btnEliminar">Eliminar Item</button>
-              </div>
-            ))
-          }
-          <button onClick={checkOut}>Finalizar compra</button>
-          <button onClick={clearCart}>Limpiar Carrito</button>
         </div>
-      )
-  
+        <div className="cartContainer">
+          <div className="cartList">
+            {
+              cart.map((product) => (
+                <div key={product.id} className="checkOut">
+                  <span>{product.title}</span>
+                  <span>{product.counter}</span>
+                  <span>${product.counter * product.price}</span>
+                  <button onClick={() => deleteItem(product)} className="btnEliminar">Eliminar Item</button>
+                </div>
+              ))
+            }
+          </div>
+          <div className="cartCheckout">
+            <button onClick={checkOut} className="btnFinalizar">Finalizar compra</button>
+            <button onClick={clearCart} className="btnClear">Limpiar Carrito</button>
+          </div>
+        </div>
+        </>
+      )  
 };
 }
 
