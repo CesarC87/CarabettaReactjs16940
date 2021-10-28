@@ -11,6 +11,7 @@ import CarouselHome from "./components/CarouselHome/CarouselHome";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
+import Logo from './images/SVG/Logo/Component 1.svg';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <CartProvider> 
       <BrowserRouter>
         <header className="App-header">
+          <Logo/>
           <NavBar />
         </header>        
         <Switch>
