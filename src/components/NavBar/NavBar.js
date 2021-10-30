@@ -1,9 +1,12 @@
 import "./NavBar.css";
+import React from "react"
 import CartWidget from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { loginWithGoogle } from "../../firebase/index";
+import { ReactComponent as Logo } from '../../images/SVG/Logo/Logo3.svg';
+
 const NavBar = () => {
 
     const {cart} = useContext(CartContext)
@@ -11,7 +14,7 @@ const NavBar = () => {
     return (        
             <nav className="nav">
                 <div className="navContainer1">
-                    Logo
+                    <Logo />
                 </div>
                 <div className="navContainer2">
                 <Link to="/">

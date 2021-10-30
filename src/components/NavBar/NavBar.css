@@ -1,6 +1,13 @@
 
 .navContainer1 {
-    height: 12vh;
+    height: 15vh;
+    position: relative;
+}
+
+.navContainer1 svg {
+    position: absolute;
+    top: 6%;
+    left: 1%;
 }
 .navContainer2 {
     display: flex;

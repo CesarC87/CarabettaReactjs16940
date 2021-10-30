@@ -7,19 +7,17 @@ import ItemDetailContainer from "./Containers/ItemDetailContainer";
 import CategoryContainer from "./Containers/CategoryContainer";
 import Cart from "./components/Cart/Cart";
 import Footer from "./components/Footer/Footer";
-import CarouselHome from "./components/CarouselHome/CarouselHome";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
-import Logo from './images/SVG/Logo/Component 1.svg';
+
 
 function App() {
   return (
     <div className="App">
       <CartProvider> 
       <BrowserRouter>
-        <header className="App-header">
-          <Logo/>
+        <header className="App-header">          
           <NavBar />
         </header>        
         <Switch>
