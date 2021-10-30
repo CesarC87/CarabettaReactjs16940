@@ -32,9 +32,9 @@ const Cart = () => {
   if(cart.length === 0) {
     return (
       <div>
-        <h2>Carrito vacío</h2>
+        <h2 className="h2Vacio">Carrito vacío</h2>
         <Link to="/">
-          <button>Volver</button>
+          <button className="btnVolver">Volver</button>
         </Link>
       </div>
     ) 

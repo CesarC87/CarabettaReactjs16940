@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-.btnEliminar, .btnClear, .btnFinalizar {
+.btnEliminar, .btnClear, .btnFinalizar, .btnVolver {
     width: fit-content;    
     font-family: 'Quicksand', sans-serif;
     margin: 2% auto;
@@ -19,7 +19,7 @@
     background-color: #03fb56;
     margin: 1%;
 }
-.btnClear {
+.btnClear, .btnVolver {
     background-color: #0e9da1f0;
     margin: 1%;
 }
@@ -31,6 +31,9 @@
 
 .checkOut {
     border: 1px solid;
+    border: 1px solid #cdcdcd;
+    border-radius: 20px;
+    margin: 0 0 0 5%;
 }
 
 .cartContainer {
@@ -40,5 +43,9 @@
 
 .cartCheckout {
     align-self: center;
+}
+
+.h2Vacio {
+    margin: 10% auto 2%;
 }
 
