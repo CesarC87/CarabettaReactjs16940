@@ -4,6 +4,7 @@ import "./Cart.css";
 import { Link } from "react-router-dom";
 import { getFirestore } from "../../firebase";
 
+
 const Cart = () => {
   const {cart , deleteItem, clearCart} = useContext(CartContext)
   const newOrder = {

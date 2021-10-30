@@ -36,7 +36,7 @@ const CarouselHome = () => {
                 <div className="img-wrapper-carousel">
                     <img
                     className="d-block w-100"
-                    src="https://images.unsplash.com/photo-1499678329028-101435549a4e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+                    src="https://images.unsplash.com/photo-1525721653822-f9975a57cd4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
                     alt="Third slide"
                     />
                 </div>

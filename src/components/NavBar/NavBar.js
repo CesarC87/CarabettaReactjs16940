@@ -6,6 +6,8 @@ import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { loginWithGoogle } from "../../firebase/index";
 import { ReactComponent as Logo } from '../../images/SVG/Logo/Logo3.svg';
+import { Icon } from '@iconify/react';
+
 
 const NavBar = () => {
 
@@ -14,20 +16,31 @@ const NavBar = () => {
     return (        
             <nav className="nav">
                 <div className="navContainer1">
+                <Link to="/">
                     <Logo />
+                </Link>                    
                 </div>
                 <div className="navContainer2">
                 <Link to="/">
                     Home
                 </Link>
                 <Link to="/category/paquetes">
-                    Paquetes
+                    <div className="navContainer2__item">
+                        <Icon className="navContainer2__item--icono" icon="fluent:luggage-20-regular" />
+                        <label>Paquetes</label>
+                    </div>
                 </Link>
                 <Link to="/category/vuelos">
-                    Vuelos
+                <div className="navContainer2__item">
+                    <Icon className="navContainer2__item--icono" icon="iconoir:airplane" />
+                    <label>Vuelos</label>
+                </div>
                 </Link>
                 <Link to="/category/alojamientos">
-                    Alojamientos
+                <div className="navContainer2__item">
+                    <Icon className="navContainer2__item--icono" icon="bx:bx-hotel" />
+                    <label>Alojamientos</label>
+                </div>
                 </Link>
                 <Link to="/category/vuelos">
                     Contacto
