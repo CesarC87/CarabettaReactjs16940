@@ -39,7 +39,7 @@ export default class CustomArrows extends Component {
    
     return (
       <div className="CustomArrowsContainer">
-        <h2>Elegí tu experiencia</h2>
+        <h2 className="h2Slider">Elegí tu experiencia</h2>
         <Slider {...settings}>               
         {this.props.data?.map((producto) => {
                 return (
