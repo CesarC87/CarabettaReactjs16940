@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router';
 import { getFirestore } from '../firebase';
-import ItemList from '../components/ItemList/ItemList';
+import CustomArrows from "../components/CustomArrows/CustomArrows"
 
 const CategoryContainer = () => {
     const [data, setData] = React.useState([]);
@@ -37,7 +37,7 @@ const CategoryContainer = () => {
                 Ha habido un error: {error.status} {error.statusText}
             </p>
         )}
-        <ItemList data={data}/>
+        <CustomArrows data={data}/>
         </>
     )
 }
