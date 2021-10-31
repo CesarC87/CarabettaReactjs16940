@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/CesarC87/CarabettaReactjs16940/static/css/main.352fb373.chunk.css",
-    "main.js": "/CesarC87/CarabettaReactjs16940/static/js/main.22ca0de2.chunk.js",
-    "main.js.map": "/CesarC87/CarabettaReactjs16940/static/js/main.22ca0de2.chunk.js.map",
-    "runtime-main.js": "/CesarC87/CarabettaReactjs16940/static/js/runtime-main.0147e58e.js",
-    "runtime-main.js.map": "/CesarC87/CarabettaReactjs16940/static/js/runtime-main.0147e58e.js.map",
-    "static/css/2.c0cfb39b.chunk.css": "/CesarC87/CarabettaReactjs16940/static/css/2.c0cfb39b.chunk.css",
-    "static/js/2.10077a3d.chunk.js": "/CesarC87/CarabettaReactjs16940/static/js/2.10077a3d.chunk.js",
-    "static/js/2.10077a3d.chunk.js.map": "/CesarC87/CarabettaReactjs16940/static/js/2.10077a3d.chunk.js.map",
-    "index.html": "/CesarC87/CarabettaReactjs16940/index.html",
-    "static/css/2.c0cfb39b.chunk.css.map": "/CesarC87/CarabettaReactjs16940/static/css/2.c0cfb39b.chunk.css.map",
-    "static/css/main.352fb373.chunk.css.map": "/CesarC87/CarabettaReactjs16940/static/css/main.352fb373.chunk.css.map",
-    "static/js/2.10077a3d.chunk.js.LICENSE.txt": "/CesarC87/CarabettaReactjs16940/static/js/2.10077a3d.chunk.js.LICENSE.txt",
-    "static/media/slick-theme.css": "/CesarC87/CarabettaReactjs16940/static/media/slick.c94f7671.ttf"
+    "main.css": "/CarabettaReactjs16940/static/css/main.fcbe115c.chunk.css",
+    "main.js": "/CarabettaReactjs16940/static/js/main.cd463989.chunk.js",
+    "main.js.map": "/CarabettaReactjs16940/static/js/main.cd463989.chunk.js.map",
+    "runtime-main.js": "/CarabettaReactjs16940/static/js/runtime-main.e419b838.js",
+    "runtime-main.js.map": "/CarabettaReactjs16940/static/js/runtime-main.e419b838.js.map",
+    "static/css/2.ba00001a.chunk.css": "/CarabettaReactjs16940/static/css/2.ba00001a.chunk.css",
+    "static/js/2.2d73d7de.chunk.js": "/CarabettaReactjs16940/static/js/2.2d73d7de.chunk.js",
+    "static/js/2.2d73d7de.chunk.js.map": "/CarabettaReactjs16940/static/js/2.2d73d7de.chunk.js.map",
+    "index.html": "/CarabettaReactjs16940/index.html",
+    "static/css/2.ba00001a.chunk.css.map": "/CarabettaReactjs16940/static/css/2.ba00001a.chunk.css.map",
+    "static/css/main.fcbe115c.chunk.css.map": "/CarabettaReactjs16940/static/css/main.fcbe115c.chunk.css.map",
+    "static/js/2.2d73d7de.chunk.js.LICENSE.txt": "/CarabettaReactjs16940/static/js/2.2d73d7de.chunk.js.LICENSE.txt",
+    "static/media/Logo3.7a51cb7e.svg": "/CarabettaReactjs16940/static/media/Logo3.7a51cb7e.svg",
+    "static/media/slick-theme.css": "/CarabettaReactjs16940/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.0147e58e.js",
-    "static/css/2.c0cfb39b.chunk.css",
-    "static/js/2.10077a3d.chunk.js",
-    "static/css/main.352fb373.chunk.css",
-    "static/js/main.22ca0de2.chunk.js"
+    "static/js/runtime-main.e419b838.js",
+    "static/css/2.ba00001a.chunk.css",
+    "static/js/2.2d73d7de.chunk.js",
+    "static/css/main.fcbe115c.chunk.css",
+    "static/js/main.cd463989.chunk.js"
   ]
 }
