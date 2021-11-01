@@ -28,7 +28,7 @@
     cursor: pointer;
 }
 .navContainer2__item--icono {
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 
@@ -46,6 +46,8 @@
     position: absolute;
     color: white;
     top: -16%;
+    padding: 10%;
+    left: 50%;
     background: #c50606b3;
     border-radius: 50%;
     width: 100%;    

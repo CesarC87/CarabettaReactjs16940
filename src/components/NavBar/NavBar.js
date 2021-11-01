@@ -20,10 +20,7 @@ const NavBar = () => {
                     <Logo />
                 </Link>                    
                 </div>
-                <div className="navContainer2">
-                <Link to="/">
-                    Home
-                </Link>
+                <div className="navContainer2">                
                 <Link to="/category/paquetes">
                     <div className="navContainer2__item">
                         <Icon className="navContainer2__item--icono" icon="fluent:luggage-20-regular" />
@@ -31,22 +28,31 @@ const NavBar = () => {
                     </div>
                 </Link>
                 <Link to="/category/vuelos">
-                <div className="navContainer2__item">
-                    <Icon className="navContainer2__item--icono" icon="iconoir:airplane" />
-                    <label>Vuelos</label>
-                </div>
+                    <div className="navContainer2__item">
+                        <Icon className="navContainer2__item--icono" icon="iconoir:airplane" />
+                        <label>Vuelos</label>
+                    </div>
                 </Link>
                 <Link to="/category/alojamientos">
-                <div className="navContainer2__item">
-                    <Icon className="navContainer2__item--icono" icon="bx:bx-hotel" />
-                    <label>Alojamientos</label>
-                </div>
+                    <div className="navContainer2__item">
+                        <Icon className="navContainer2__item--icono" icon="bx:bx-hotel" />
+                        <label>Alojamientos</label>
+                    </div>
                 </Link>
                 <Link to="/category/vuelos">
-                    Contacto
+                    <div className="navContainer2__item">
+                    <Icon className="navContainer2__item--icono" icon="ic:outline-local-activity" />
+                        <label>Actividades</label>
+                    </div>
+                </Link>
+                <Link to="/">
+                <div className="navContainer2__item">
+                    <Icon className="navContainer2__item--icono" icon="clarity:car-line" />
+                        <label>Autos</label>
+                    </div>
                 </Link>
                 <Link to="/Cart" className="toCart">
-                    <CartWidget />
+                    <Icon className="navContainer2__item--icono" icon="ant-design:shopping-cart-outlined" />
                     {
                         cart.length !== 0 && <span className="h5 mx-1">{cart.length}</span>
                     }
