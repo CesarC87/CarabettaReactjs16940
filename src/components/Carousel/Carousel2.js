@@ -52,4 +52,3 @@ const Carousel2 = () => {
 }
 
 export default Carousel2
-

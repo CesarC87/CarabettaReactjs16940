@@ -26,8 +26,7 @@ const ItemDetail = ({product}) => {
         <div className="ItemDetailCards" key={product.id}>
             <div className="ItemDetailCards__izq">
                 <span className="ItemDetailCards__izq--title">{product.title}</span>
-                <Carousel2 />
-               {/* <img className="ItemDetailCards__izq--img" src={product.image} alt={product.title}></img> */}
+                <Carousel2 />               
             </div>
             <div className="ItemDetailCards__der">
                 <p className="ItemDetailCards__der--description">{product.description2}</p>
