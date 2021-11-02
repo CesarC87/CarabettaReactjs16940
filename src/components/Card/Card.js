@@ -17,6 +17,7 @@ const Card = ({ title, description, image, price, productId }) => {
               <div className={styles.descriptionDiv}>
                   <p className={styles.description}>{description}</p>
               </div>    
+              <hr className={styles.hr}></hr>
                   <p className={styles.price}>$ {price}</p>
                 <button className={styles.button}>
                   Ver detalle

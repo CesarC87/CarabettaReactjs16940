@@ -36,11 +36,11 @@ const CarouselHome = () => {
                 <div className="img-wrapper-carousel">
                     <img
                     className="d-block w-100"
-                    src="https://images.unsplash.com/photo-1525721653822-f9975a57cd4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+                    src="https://images.unsplash.com/photo-1516817153573-7b617832a471?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
                     alt="Third slide"
                     />
                 </div>
-                <Carousel.Caption>
+                <Carousel.Caption className="captionEsp2">
                 <h3>Las mejores actividades para disfrutar en familia</h3>
                 <p>Asistencia al viajero las 24hs</p>
                 </Carousel.Caption>

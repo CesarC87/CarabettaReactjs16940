@@ -13,7 +13,9 @@
     font-size: xx-large;    
     background-color: white;
 }
-
+.slick-slider .slick-next {
+    margin: 0 2% 0 0;
+}
 .h4Slider {
     font-family: 'Raleway';
     background: linear-gradient(45deg, #0095ff,#51b7e9, #5de35b, #2cff00d6);
