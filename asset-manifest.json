@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/CarabettaReactjs16940/static/css/main.129de90e.chunk.css",
-    "main.js": "/CarabettaReactjs16940/static/js/main.78c3e47a.chunk.js",
-    "main.js.map": "/CarabettaReactjs16940/static/js/main.78c3e47a.chunk.js.map",
+    "main.js": "/CarabettaReactjs16940/static/js/main.6910434b.chunk.js",
+    "main.js.map": "/CarabettaReactjs16940/static/js/main.6910434b.chunk.js.map",
     "runtime-main.js": "/CarabettaReactjs16940/static/js/runtime-main.e419b838.js",
     "runtime-main.js.map": "/CarabettaReactjs16940/static/js/runtime-main.e419b838.js.map",
     "static/css/2.ba00001a.chunk.css": "/CarabettaReactjs16940/static/css/2.ba00001a.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.ba00001a.chunk.css",
     "static/js/2.edac40de.chunk.js",
     "static/css/main.129de90e.chunk.css",
-    "static/js/main.78c3e47a.chunk.js"
+    "static/js/main.6910434b.chunk.js"
   ]
 }
