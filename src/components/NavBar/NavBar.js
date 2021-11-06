@@ -7,6 +7,7 @@ import { CartContext } from "../../context/CartContext";
 import { loginWithGoogle } from "../../firebase/index";
 import { ReactComponent as Logo } from '../../images/SVG/Logo/Logo3.svg';
 import { Icon } from '@iconify/react';
+import Authentication from "../Authentication/Authentication";
 
 
 const NavBar = () => {
@@ -18,7 +19,8 @@ const NavBar = () => {
                 <div className="navContainer1">
                 <Link to="/">
                     <Logo />
-                </Link>                    
+                </Link>
+                <Authentication />                    
                 </div>
                 <div className="navContainer2">                
                 <Link to="/category/paquetes">
@@ -39,7 +41,7 @@ const NavBar = () => {
                         <label>Alojamientos</label>
                     </div>
                 </Link>
-                <Link to="/category/vuelos">
+                <Link to="/category/actividades">
                     <div className="navContainer2__item">
                     <Icon className="navContainer2__item--icono" icon="ic:outline-local-activity" />
                         <label>Actividades</label>
