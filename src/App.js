@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <CartProvider> 
-      <BrowserRouter>
+      <BrowserRouter basename="/CarabettaReactjs16940">
         <header className="App-header">          
           <NavBar />
         </header>        
