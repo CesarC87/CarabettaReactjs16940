@@ -6,29 +6,7 @@ import { getFirestore } from "../../firebase";
 
 
 const Cart = () => {
-  const {cart , deleteItem, clearCart} = useContext(CartContext)
-  const newOrder = {
-    buyer: {
-      name: "César",
-      phone: 123456,
-      email: "hola@quetal.com"
-    },
-    items: [
-      { item: "Paris", quantity: 2},
-      { item: "Madrid", quantitiy: 3}
-    ],
-    total: 15000
-  };
-  const checkOut = () => {
-    const db = getFirestore();
-    const orders = db.collection("orders");
-
-    orders
-    .add(newOrder)
-    .then((docRef) => console.log(docRef))
-    .catch((error) => console.log(error))    
-
-  }
+  const {cart , deleteItem, clearCart} = useContext(CartContext)  
 
   if(cart.length === 0) {
     return (
@@ -45,21 +23,23 @@ const Cart = () => {
         <div className="cartTitle">
           <h3>Tu carrito:</h3>
         </div>
-        <div className="cartContainer">
-          <div className="cartList">
+        <div className="cartIzq">
+          <div className="cartIzq__List">
             {
               cart.map((product) => (
                 <div key={product.id} className="checkOut">
-                  <span>{product.title}</span>
-                  <span>{product.counter}</span>
-                  <span>${product.counter * product.price}</span>
+                  <span>Tu compra: {product.title}</span>
+                  <span>Cantidad: {product.counter}</span>
+                  <span>Precio Final: ${product.counter * product.price}</span>
                   <button onClick={() => deleteItem(product)} className="btnEliminar">Eliminar Item</button>
                 </div>
               ))
             }
           </div>
-          <div className="cartCheckout">
-            <button onClick={checkOut} className="btnFinalizar">Finalizar compra</button>
+          <div className="cartDer">            
+            <Link to="/CartCheckout" className="btnContinuar">
+              Continuar compra
+            </Link>
             <button onClick={clearCart} className="btnClear">Limpiar Carrito</button>
           </div>
         </div>

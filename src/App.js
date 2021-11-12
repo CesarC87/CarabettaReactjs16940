@@ -10,6 +10,7 @@ import Footer from "./components/Footer/Footer";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
+import CartCheckout from "./components/CartCheckout/CartCheckout";
 
 
 function App() {
@@ -23,12 +24,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={ItemListContainer} />
           <Route exact path="/product/:id" component={ItemDetailContainer} />
-          <Route
-            exact
-            path="/category/:category"
-            component={CategoryContainer}
-          />
+          <Route exact path="/category/:category" component={CategoryContainer} />
           <Route exact path="/Cart" component={Cart} />
+          <Route exact path="/CartCheckout" component={CartCheckout} />
         </Switch>
         <Footer />
       </BrowserRouter>

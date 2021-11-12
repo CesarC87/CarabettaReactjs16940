@@ -1,9 +1,13 @@
 .checkOut {
     display: flex;
     flex-direction: column;
+    border: 1px solid;
+    border: 1px solid #cdcdcd;
+    border-radius: 20px;
+    margin: 0 0 0 5%;
 }
 
-.btnEliminar, .btnClear, .btnFinalizar, .btnVolver {
+.btnEliminar, .btnClear, .btnContinuar, .btnVolver {
     width: fit-content;    
     font-family: 'Quicksand', sans-serif;
     margin: 2% auto;
@@ -15,33 +19,26 @@
     padding: 1% 2%;
 }
 
-.btnFinalizar {
+.btnContinuar {
     background-color: #03fb56;
     margin: 1%;
+    padding: 1.4% 1.7%;
 }
 .btnClear, .btnVolver {
     background-color: #0e9da1f0;
     margin: 1%;
 }
 
-
 .cartTitle {
     margin: 2% auto;
 }
 
-.checkOut {
-    border: 1px solid;
-    border: 1px solid #cdcdcd;
-    border-radius: 20px;
-    margin: 0 0 0 5%;
-}
-
-.cartContainer {
+.cartIzq {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-.cartCheckout {
+.cartDer {
     align-self: center;
 }
 

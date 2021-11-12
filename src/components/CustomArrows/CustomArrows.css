@@ -18,11 +18,11 @@
 }
 .h4Slider {
     font-family: 'Raleway';
-    background: linear-gradient(45deg, #0095ff,#51b7e9, #5de35b, #2cff00d6);
+    background: linear-gradient(45deg, #0095ff,#0bd2ff, #1feaff, #42fcfffb);
     color: white;
     width: fit-content;
     padding: 0.5%;
     margin: 0 auto 2%;
     border-radius: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }

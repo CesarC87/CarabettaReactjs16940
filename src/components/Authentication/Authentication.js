@@ -10,29 +10,37 @@ const Authentication = () => {
 
     const [User, setUser] = useState([]);    
     
+    
     const loginWithGoogle = () => {
-            const googleProvider = new firebase.auth.GoogleAuthProvider();
-            firebase.auth().signInWithPopup(googleProvider)
-            .then((re) => {                 
-                console.log(re.user.displayName);
-                setUser(re.user.displayName);                 
+        const googleProvider = new firebase.auth.GoogleAuthProvider();
+        firebase.auth().signInWithPopup(googleProvider)
+        .then((re) => {                 
+            console.log(re.user.displayName);
+            setUser(re.user.displayName); 
+                                
             })            
-            .catch((err) => {
-                console.log(err);
-            }) 
+        .catch((err) => {
+            console.log(err);
+            })             
         };
 
    const userSignOut = () => {        
             firebase.auth().signOut()       
             setUser([]);      
             console.log(User)
+            
    }   
+    
+    
 
     return (
         <div>                      
-                <button className="btnSignOut" onClick={userSignOut}>Sign out</button> 
-                <button className="btnSignIn" onClick={loginWithGoogle}>Sign in</button>      
-            
+                {
+                    User === null  ?
+                    <button className="btnSignIn" onClick={loginWithGoogle}>Sign in</button>  :   
+                    <button className="btnSignOut" onClick={userSignOut}>Sign out</button> 
+                }
+                
         </div>
     )
 }
