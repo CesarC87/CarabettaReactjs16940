@@ -13,7 +13,11 @@ import Authentication from "../Authentication/Authentication";
 const NavBar = () => {
 
     const {cart} = useContext(CartContext)
-
+    let total = 0
+    cart.forEach(x => {
+        total += x.counter
+    })
+    
     return (        
             <nav className="nav">
                 <div className="navContainer1">
@@ -56,7 +60,7 @@ const NavBar = () => {
                 <Link to="/Cart" className="toCart">
                     <Icon className="navContainer2__item--icono" icon="ant-design:shopping-cart-outlined" />
                     {
-                        cart.length !== 0 && <span className="h5 mx-1">{cart.length}</span>
+                        cart.length !== 0 && <span className="h5 mx-1">{total}</span>
                     }
                 </Link>
                 {/* <button onClick={loginWithGoogle} className="logIn">Ingresar</button> */}
