@@ -14,7 +14,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5%;
+    margin: 2.5%;
+}
+
+.userData label {
+    margin: 0 1%;
 }
 
 .userData input {

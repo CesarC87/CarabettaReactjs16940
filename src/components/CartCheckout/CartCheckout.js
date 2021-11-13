@@ -17,7 +17,7 @@ const CartCheckout = () => {
       itemId: '',
       items : cart.map( x=> x.title ),
       precioUnitario : cart.map( y => y.price )            
-    }); 
+    });    
 
     const newOrder = {
         buyer: {
@@ -70,7 +70,7 @@ const CartCheckout = () => {
             <form className="userData" onSubmit={checkOut}>              
                 <Input label="Nombre" idFor="userName" name="nombre" type="text" handleInputChange={handleInputChange}/>
                 <Input label="Apellido" idFor="userApellido" name="apellido" type="text" handleInputChange={handleInputChange}/>
-                <Input label="Correo electrónico" idFor="userMail" name="email" type="email" placeholder="juan@viajando.com" handleInputChange={handleInputChange}/>
+                <Input label="Email" idFor="userMail" name="email" type="email" placeholder="juan@viajando.com" handleInputChange={handleInputChange}/>
                 <Input label="Documento" idFor="userId" name="dni" type="number" handleInputChange={handleInputChange}/>
                 <Input label="Teléfono" idFor="userPhone" name="phone" type="number" handleInputChange={handleInputChange}/>
                 {
